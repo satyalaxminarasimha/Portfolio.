@@ -1184,6 +1184,10 @@ section {
         font-size: 2rem;
     }
 
+    .hero-profile-photo {
+        max-width: 200px;
+    }
+
     .profile-photo {
         max-width: 220px;
     }
