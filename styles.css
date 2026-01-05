@@ -207,6 +207,18 @@ body {
     align-items: center;
 }
 
+.hero-profile-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 20px 60px rgba(37, 99, 235, 0.4);
+    border: 6px solid var(--primary-color);
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    animation: float 3s ease-in-out infinite;
+}
+
 .avatar-placeholder {
     font-size: 15rem;
     color: var(--primary-color);
@@ -264,6 +276,28 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
+}
+
+.about-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    border: 4px solid var(--primary-color);
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);
 }
 
 .about-text p {
@@ -678,6 +712,77 @@ section {
     font-size: 0.9rem;
 }
 
+/* Certificate Gallery Styles */
+.cert-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.cert-item-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert-link {
+    text-decoration: none;
+    width: 100%;
+}
+
+.cert-image {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cert-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.cert-link:hover .cert-image {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow);
+}
+
+.cert-link:hover .cert-image::before {
+    left: 100%;
+}
+
+.cert-image i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.cert-image p {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+    position: relative;
+    z-index: 1;
+}
+
 /* ============================================
    CONTACT SECTION
    ============================================ */
@@ -800,8 +905,8 @@ section {
         font-size: 1.2rem;
     }
 
-    .hero-image {
-        display: none;
+    .hero-profile-photo {
+        max-width: 300px;
     }
 
     .hero-content {
@@ -816,6 +921,10 @@ section {
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .about-photo {
+        order: -1;
     }
 
     .about-stats {
@@ -914,6 +1023,10 @@ section {
         font-size: 0.95rem;
     }
 
+    .hero-profile-photo {
+        max-width: 250px;
+    }
+
     .hero-buttons {
         flex-direction: column;
     }
@@ -933,6 +1046,30 @@ section {
     .about-stats {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .profile-photo {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .cert-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .cert-image {
+        min-height: 180px;
+        padding: 1.5rem 1rem;
+    }
+
+    .cert-image i {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .cert-image p {
+        font-size: 0.85rem;
     }
 
     /* Skills Grid */
@@ -1045,6 +1182,20 @@ section {
 
     .stat h3 {
         font-size: 2rem;
+    }
+
+    .profile-photo {
+        max-width: 220px;
+    }
+
+    .cert-gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .cert-image {
+        min-height: 160px;
+        padding: 1.5rem 1rem;
     }
 
     .project-card {
