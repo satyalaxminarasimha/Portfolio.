@@ -598,6 +598,7 @@ section {
     flex-grow: 1;
 }
 
+
 .project-links {
     display: flex;
     gap: 1rem;
