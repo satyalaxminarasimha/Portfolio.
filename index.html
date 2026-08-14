@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <a href="#home" class="logo-text">SATYA</a>
+                <a href="#home" class="logo-text">&lt;Satya /&gt;</a>
             </div>
             <div class="nav-toggle" id="navToggle">
                 <span></span>
@@ -38,8 +38,13 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1 class="hero-title">Satya </h1>
-                <p class="hero-subtitle">Full Stack Developer | AI/ML Enthusiast | Backend Architect</p>
+                <p class="hero-eyebrow">$ whoami<span> → software engineer, class of 2026</span></p>
+                <h1 class="hero-title">Satya</h1>
+                <div class="hero-roles">
+                    <span class="role-chip" data-accent="lang">Full Stack Developer</span>
+                    <span class="role-chip" data-accent="ai">AI/ML Enthusiast</span>
+                    <span class="role-chip" data-accent="fw">Backend Architect</span>
+                </div>
                 <p class="hero-description">
                     Building scalable, innovative solutions with modern technologies. Final-year CS student specializing in AI/ML with hands-on experience in MERN stack and cloud platforms.
                 </p>
@@ -49,7 +54,13 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://lh3.googleusercontent.com/d/1pO7SDzzOa1LooX5nCRYiQmc_8PqF7hjr" alt="Satya Laxmi" class="hero-profile-photo" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'avatar-placeholder\'><i class=\'fas fa-user-circle\'></i></div>'">
+                <div class="hero-photo-frame">
+                    <div class="window-chrome">
+                        <span></span><span></span><span></span>
+                        <span class="window-label">satya.dev</span>
+                    </div>
+                    <img src="https://lh3.googleusercontent.com/d/1pO7SDzzOa1LooX5nCRYiQmc_8PqF7hjr" alt="Satya Laxmi" class="hero-profile-photo" onerror="this.style.display='none'; this.parentElement.innerHTML+='<div class=\'avatar-placeholder\'><i class=\'fas fa-user-circle\'></i></div>'">
+                </div>
             </div>
         </div>
     </section>
@@ -57,6 +68,7 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
+            <span class="eyebrow">about</span>
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
@@ -83,15 +95,15 @@
                     </div>
                 </div>
                 <div class="about-stats">
-                    <div class="stat">
+                    <div class="stat" data-accent="lang">
                         <h3>4+</h3>
                         <p>Years of Coding</p>
                     </div>
-                    <div class="stat">
+                    <div class="stat" data-accent="ai">
                         <h3>5+</h3>
                         <p>Problems Solved</p>
                     </div>
-                    <div class="stat">
+                    <div class="stat" data-accent="cloud">
                         <h3>3+</h3>
                         <p>Technologies</p>
                     </div>
@@ -103,6 +115,7 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
+            <span class="eyebrow">technical-skills</span>
             <h2 class="section-title">Technical Skills</h2>
             <p class="skills-subtitle">Tools I reach for across the stack — from language fundamentals to production ML.</p>
             <div class="skills-grid">
@@ -193,6 +206,7 @@
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
+            <span class="eyebrow">experience.log</span>
             <h2 class="section-title">Professional Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
@@ -229,9 +243,10 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
+            <span class="eyebrow">projects</span>
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-accent="lang">
                     <div class="project-image">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
@@ -253,7 +268,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-accent="db">
                     <div class="project-image">
                         <i class="fas fa-robot"></i>
                     </div>
@@ -274,7 +289,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-accent="fw">
                     <div class="project-image">
                         <i class="fas fa-lock"></i>
                     </div>
@@ -295,7 +310,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-accent="ai">
                     <div class="project-image">
                         <i class="fas fa-brain"></i>
                     </div>
@@ -315,7 +330,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-accent="cloud">
                     <div class="project-image">
                         <i class="fas fa-heartbeat"></i>
                     </div>
@@ -337,7 +352,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-accent="lang">
                     <div class="project-image">
                         <i class="fas fa-chart-line"></i>
                     </div>
@@ -359,7 +374,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-accent="db">
                     <div class="project-image">
                         <i class="fas fa-cogs"></i>
                     </div>
@@ -387,6 +402,7 @@
     <!-- Education & Certifications Section -->
     <section id="education" class="education">
         <div class="container">
+            <span class="eyebrow">education</span>
             <h2 class="section-title">Education & Certifications</h2>
             <div class="edu-certs-grid">
                 <div class="education-block">
@@ -413,7 +429,7 @@
                     <h3><i class="fas fa-certificate"></i> Certifications</h3>
                     
                     <div class="cert-gallery">
-                        <div class="cert-item-gallery">
+                        <div class="cert-item-gallery" data-accent="lang">
                             <a href="https://drive.google.com/file/d/1hC7car8F9C0RRsLL4cItAsveKIlNdWGe/view?usp=sharing" target="_blank" class="cert-link">
                                 <div class="cert-image">
                                     <i class="fas fa-certificate"></i>
@@ -422,7 +438,7 @@
                             </a>
                         </div>
 
-                        <div class="cert-item-gallery">
+                        <div class="cert-item-gallery" data-accent="cloud">
                             <a href="https://drive.google.com/file/d/1-EouDfC5l7iBXAjWRF0Ng551TtcZdzL7/view?usp=sharing" target="_blank" class="cert-link">
                                 <div class="cert-image">
                                     <i class="fas fa-certificate"></i>
@@ -431,7 +447,7 @@
                             </a>
                         </div>
 
-                        <div class="cert-item-gallery">
+                        <div class="cert-item-gallery" data-accent="cloud">
                             <a href="https://drive.google.com/file/d/1eBtFXpU9NAcM_F3sH2NgUh-syT8PYmfb/view?usp=sharing" target="_blank" class="cert-link">
                                 <div class="cert-image">
                                     <i class="fas fa-certificate"></i>
@@ -440,7 +456,7 @@
                             </a>
                         </div>
 
-                        <div class="cert-item-gallery">
+                        <div class="cert-item-gallery" data-accent="db">
                             <a href="https://drive.google.com/file/d/1sGtdEC5rzzHr73qX-Xw116ZyjZZIMVZz/view?usp=sharing" target="_blank" class="cert-link">
                                 <div class="cert-image">
                                     <i class="fas fa-certificate"></i>
@@ -449,7 +465,7 @@
                             </a>
                         </div>
 
-                        <div class="cert-item-gallery">
+                        <div class="cert-item-gallery" data-accent="ai">
                             <a href="https://drive.google.com/file/d/1fS81mRNqr7Gf-oy-t8rkEZKEPGNDEZFe/view?usp=sharing" target="_blank" class="cert-link">
                                 <div class="cert-image">
                                     <i class="fas fa-certificate"></i>
@@ -466,6 +482,7 @@
     <!-- Publications Section -->
     <section id="publications" class="publications">
         <div class="container">
+            <span class="eyebrow">publications</span>
             <h2 class="section-title">Publications</h2>
             <div class="publication-item">
                 <h3>Student Learning Assistant Based on Adaptive LLM</h3>
@@ -483,6 +500,7 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
+            <span class="eyebrow">contact</span>
             <h2 class="section-title">Let's Connect</h2>
             <div class="contact-content">
                 <p class="contact-description">
@@ -490,7 +508,7 @@
                 </p>
                 
                 <div class="contact-methods">
-                    <a href="mailto:k.sathyam2003@gmail.com" class="contact-method">
+                    <a href="mailto:k.sathyam2003@gmail.com" class="contact-method" data-accent="lang">
                         <div class="method-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
@@ -500,7 +518,7 @@
                         </div>
                     </a>
 
-                    <a href="tel:+917095281725" class="contact-method">
+                    <a href="tel:+917095281725" class="contact-method" data-accent="fw">
                         <div class="method-icon">
                             <i class="fas fa-phone"></i>
                         </div>
@@ -510,7 +528,7 @@
                         </div>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/satya2812/" target="_blank" class="contact-method">
+                    <a href="https://www.linkedin.com/in/satya2812/" target="_blank" class="contact-method" data-accent="db">
                         <div class="method-icon">
                             <i class="fab fa-linkedin"></i>
                         </div>
@@ -520,7 +538,7 @@
                         </div>
                     </a>
 
-                    <a href="https://github.com/satyalaxminarasimha" target="_blank" class="contact-method">
+                    <a href="https://github.com/satyalaxminarasimha" target="_blank" class="contact-method" data-accent="cloud">
                         <div class="method-icon">
                             <i class="fab fa-github"></i>
                         </div>
@@ -532,7 +550,7 @@
 
                     <!-- Removed LeetCode contact method -->
 
-                    <a href="https://drive.google.com/file/d/1hENM09mwcduFMswTfNc7uA6m6cgmrffi/view?usp=sharing" target="_blank" class="contact-method">
+                    <a href="https://drive.google.com/file/d/1hENM09mwcduFMswTfNc7uA6m6cgmrffi/view?usp=sharing" target="_blank" class="contact-method" data-accent="ai">
                         <div class="method-icon">
                             <i class="fas fa-file-pdf"></i>
                         </div>
@@ -557,6 +575,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
+            <p class="footer-status">Open to full-time Software Engineer roles</p>
             <p>&copy; 2026 Satya Laxmi. All rights reserved.</p>
             <p>Designed with <i class="fas fa-heart"></i> for innovation and excellence</p>
         </div>
