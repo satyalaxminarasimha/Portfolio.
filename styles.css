@@ -367,55 +367,131 @@ section {
    SKILLS SECTION
    ============================================ */
 .skills {
-    background: linear-gradient(135deg, #f0f9ff 0%, #f9fafb 100%);
+    position: relative;
+    background:
+        radial-gradient(circle, #dbe4f0 1px, transparent 1px) 0 0 / 22px 22px,
+        linear-gradient(135deg, #f4f7fb 0%, #f9fafb 100%);
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+.skills-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    margin-top: -1.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
 }
+
+/* Masonry via CSS columns: each card keeps its own natural height instead of
+   being stretched to match the tallest card in its row (the old CSS Grid
+   behaviour, which is what left a big empty gap under "Databases"). */
+.skills-grid {
+    column-count: 4;
+    column-gap: 1.5rem;
+}
+
+@media (max-width: 1199px) and (min-width: 901px) {
+    .skills-grid { column-count: 3; }
+}
+@media (max-width: 900px) and (min-width: 601px) {
+    .skills-grid { column-count: 2; }
+}
+@media (max-width: 600px) {
+    .skills-grid { column-count: 1; }
+}
+
+/* Category accent tokens - one hue per category so the section reads as a
+   coded taxonomy, not five identical blue boxes. */
+.skill-category[data-accent="lang"]  { --accent: #2563eb; --accent-soft: #e8f0ff; }
+.skill-category[data-accent="db"]    { --accent: #0d9488; --accent-soft: #e3f6f3; }
+.skill-category[data-accent="fw"]    { --accent: #7c3aed; --accent-soft: #efe7fd; }
+.skill-category[data-accent="ai"]    { --accent: #ea580c; --accent-soft: #fdece1; }
+.skill-category[data-accent="cloud"] { --accent: #059669; --accent-soft: #e2f6ef; }
 
 .skill-category {
+    break-inside: avoid;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1.5rem;
     background: var(--bg-white);
-    padding: 2rem;
-    border-radius: 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    border-top: 3px solid var(--accent);
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
+    overflow: hidden;
 }
 
 .skill-category:hover {
     box-shadow: var(--shadow);
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
 
-.skill-category h3 {
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-    font-size: 1.3rem;
+.skill-category-header {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 0.7rem;
+    padding: 1.1rem 1.4rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.skill-category-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 0.95rem;
+    flex-shrink: 0;
+}
+
+.skill-category-header h3 {
+    color: var(--text-dark);
+    font-size: 1.05rem;
+    font-weight: 700;
+    flex: 1;
+}
+
+.skill-count {
+    font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 2px 7px;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
 }
 
 .skill-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.8rem;
+    gap: 0.6rem;
+    padding: 1.3rem 1.4rem 1.5rem;
 }
 
 .skill-tag {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    background: var(--accent-soft);
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+    padding: 6px 12px;
+    border-radius: 6px;
+    line-height: 1.3;
     transition: var(--transition);
+    cursor: default;
 }
 
 .skill-tag:hover {
-    transform: scale(1.05);
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px color-mix(in srgb, var(--accent) 35%, transparent);
 }
 
 /* ============================================
@@ -1071,11 +1147,6 @@ section {
 
     .cert-image p {
         font-size: 0.85rem;
-    }
-
-    /* Skills Grid */
-    .skills-grid {
-        grid-template-columns: 1fr;
     }
 
     /* Experience Timeline */
