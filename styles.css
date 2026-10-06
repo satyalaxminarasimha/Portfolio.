@@ -339,6 +339,10 @@ h1, h2, h3, h4 {
     background: var(--accent-lang-soft);
 }
 
+.avatar-placeholder[hidden] {
+    display: none;
+}
+
 /* ============================================
    SECTIONS GENERAL STYLES
    ============================================ */
@@ -492,22 +496,49 @@ section {
     font-size: 1rem;
 }
 
-/* Masonry via CSS columns: each card keeps its own natural height instead of
-   being stretched to match the tallest card in its row (the old CSS Grid
-   behaviour, which is what left a big empty gap under "Databases"). */
+/* Use an intentional grid so category order and card widths remain predictable. */
 .skills-grid {
-    column-count: 4;
-    column-gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1.5rem;
 }
 
-@media (max-width: 1199px) and (min-width: 901px) {
-    .skills-grid { column-count: 3; }
+.skill-category:nth-child(1),
+.skill-category:nth-child(2),
+.skill-category:nth-child(3),
+.skill-category:nth-child(5) {
+    grid-column: span 4;
 }
-@media (max-width: 900px) and (min-width: 601px) {
-    .skills-grid { column-count: 2; }
+
+.skill-category:nth-child(4) {
+    grid-column: span 8;
 }
+
+@media (max-width: 1000px) {
+    .skills-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .skill-category:nth-child(1),
+    .skill-category:nth-child(2),
+    .skill-category:nth-child(3),
+    .skill-category:nth-child(5) {
+        grid-column: span 3;
+    }
+
+    .skill-category:nth-child(4) {
+        grid-column: span 6;
+    }
+}
+
 @media (max-width: 600px) {
-    .skills-grid { column-count: 1; }
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-category:nth-child(n) {
+        grid-column: span 1;
+    }
 }
 
 /* Category accent tokens - one hue per category so the section reads as a
@@ -519,10 +550,8 @@ section {
 .skill-category[data-accent="cloud"] { --accent: #059669; --accent-soft: #e2f6ef; }
 
 .skill-category {
-    break-inside: avoid;
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
     background: var(--bg-white);
     border-radius: 10px;
     border: 1px solid var(--border-color);
@@ -1116,7 +1145,7 @@ section {
 
 .contact-methods {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
 }
@@ -1170,10 +1199,22 @@ section {
     margin-bottom: 0.3rem;
 }
 
+.method-info {
+    min-width: 0;
+    flex: 1;
+}
+
 .method-info p {
     color: var(--text-dark);
     font-weight: 600;
     font-size: 0.95rem;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+}
+
+.contact-method[data-accent="lang"] .method-info p {
+    font-size: 0.82rem;
+    white-space: nowrap;
 }
 
 .social-links {
