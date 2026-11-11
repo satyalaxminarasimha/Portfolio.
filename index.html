@@ -1,587 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satya - Full Stack Developer & AI/ML Specialist</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karri Satya Laxmi Narasimha Murthy — Software Engineer &amp; Freelance Web Developer</title>
+  <meta name="description" content="Software Engineer, Full-Stack Developer and freelance web developer. I build business websites, full-stack web apps, and machine learning solutions. Call +91 70952 81725.">
+  <meta name="author" content="Karri Satya Laxmi Narasimha Murthy">
+  <meta name="theme-color" content="#0f1f38">
+
+  <!-- Open Graph / social previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Karri Satya Laxmi Narasimha Murthy — Software Engineer &amp; Freelance Web Developer">
+  <meta property="og:description" content="Full-stack and freelance web developer building websites, web applications, and AI/ML solutions.">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/main.js" defer></script>
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Karri Satya Laxmi Narasimha Murthy",
+    "alternateName": "Satya",
+    "jobTitle": "Software Engineer and Freelance Web Developer",
+    "email": "mailto:k.sathyam2003@gmail.com",
+    "telephone": "+91-7095281725",
+    "sameAs": [
+      "https://github.com/satyalaxminarasimha",
+      "https://www.linkedin.com/in/satya2812/"
+    ],
+    "knowsAbout": ["Web development", "Full-stack development", "React", "Node.js", "Java", "Python", "Machine learning"]
+  }
+  </script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="#home" class="logo-text">&lt;Satya /&gt;</a>
-            </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Header ============ -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#top" class="nav__logo" aria-label="Home">
+        <span class="nav__logo-mark">KS</span>
+        <span class="nav__logo-text">
+          <span class="nav__logo-name">Satya</span>
+          <span class="nav__logo-tag">Software engineer</span>
+        </span>
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#experience" class="nav__link">Experience</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="https://drive.google.com/file/d/1HnWIdaNTJExybIdL8uOE5-_eS9PTfDW6/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--sm">Résumé</a>
+          <a href="#contact" class="btn btn--gold btn--sm">Start a project</a>
         </div>
+      </div>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <p class="hero-eyebrow">$ whoami<span> → software engineer, class of 2026</span></p>
-                <h1 class="hero-title">Satya</h1>
-                <div class="hero-roles">
-                    <span class="role-chip" data-accent="lang">Full Stack Developer</span>
-                    <span class="role-chip" data-accent="ai">AI/ML Enthusiast</span>
-                    <span class="role-chip" data-accent="fw">Backend Architect</span>
-                </div>
-                <p class="hero-description">
-                    Building scalable, innovative solutions with modern technologies. Final-year CS student specializing in AI/ML with hands-on experience in MERN stack and cloud platforms.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="hero-photo-frame">
-                    <div class="window-chrome">
-                        <span></span><span></span><span></span>
-                        <span class="window-label">satya.dev</span>
-                    </div>
-                    <img src="profile.jpg" alt="Satya Laxmi" class="hero-profile-photo" onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.hidden=false;">
-                    <div class="avatar-placeholder" hidden><i class="fas fa-user-circle"></i></div>
-                </div>
-            </div>
+  <main id="main">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="top">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__role">Software engineer and freelance web developer</p>
+          <h1 class="hero__title">Karri Satya Laxmi<br>Narasimha Murthy</h1>
+          <p class="hero__subtitle">I build websites for businesses and web applications that grow with them.</p>
+          <p class="hero__lead">
+            I design and develop fast, responsive websites for businesses and individuals, and
+            scalable full-stack web applications &mdash; with a strong foundation in
+            <strong>backend systems</strong> and <strong>AI&nbsp;/&nbsp;machine learning</strong>.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--gold btn--lg">Start a project</a>
+            <a href="#projects" class="btn btn--light-outline btn--lg">View my work</a>
+          </div>
         </div>
+
+        <aside class="hero-card" aria-label="Contact details">
+          <div class="hero-card__head">
+            <span class="hero-card__avatar" aria-hidden="true">KS</span>
+            <div>
+              <p class="hero-card__name">Satya</p>
+              <p class="hero-card__role">Full-Stack &amp; Freelance Web Developer</p>
+            </div>
+          </div>
+          <p class="hero-card__status"><span class="status-dot" aria-hidden="true"></span>Available for new projects</p>
+          <ul class="hero-card__list">
+            <li>
+              <a href="tel:+917095281725">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+                <span><small>Phone</small>+91 70952 81725</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:k.sathyam2003@gmail.com">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg>
+                <span><small>Email</small>k.sathyam2003@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/satya2812/" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span><small>LinkedIn</small>linkedin.com/in/satya2812</span>
+              </a>
+            </li>
+          </ul>
+          <a href="https://drive.google.com/file/d/1HnWIdaNTJExybIdL8uOE5-_eS9PTfDW6/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn--navy btn--block">View résumé</a>
+        </aside>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <span class="eyebrow">about</span>
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Results-driven Software Engineer and Computer Science Engineering graduate (B.Tech, AI &amp; ML, ANITS, Visakhapatnam, May 2026) with proven experience in object-oriented programming, algorithm design, data structures, and full-stack software development. Proficient in Java, Python, JavaScript, TypeScript, and SQL. Experienced in designing scalable system architectures, RESTful API development, software testing, debugging, and Agile development workflows. Built and deployed multiple production-grade web applications using the MERN stack. Published research on Adaptive LLM-based educational systems in an international peer-reviewed journal. Certified in AWS Cloud Computing. Seeking a Software Engineer / Developer role to build high-quality, maintainable software at scale.
-                    </p>
-                    <div class="contact-info">
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:k.sathyam2003@gmail.com">k.sathyam2003@gmail.com</a>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+917095281725">+91 7095281725</a>
-                        </div>
-                        <div class="info-item">
-                            <i class="fab fa-linkedin"></i>
-                            <a href="https://www.linkedin.com/in/satya2812/" target="_blank">LinkedIn Profile</a>
-                        </div>
-                        <div class="info-item">
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/satyalaxminarasimha" target="_blank">GitHub Profile</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-stats">
-                    <div class="stat" data-accent="lang">
-                        <h3>4+</h3>
-                        <p>Years of Coding</p>
-                    </div>
-                    <div class="stat" data-accent="ai">
-                        <h3>5+</h3>
-                        <p>Problems Solved</p>
-                    </div>
-                    <div class="stat" data-accent="cloud">
-                        <h3>3+</h3>
-                        <p>Technologies</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- ============ Value strip ============ -->
+    <section class="values" aria-label="What you can expect">
+      <ul class="container values__list">
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h14v11H5zM9 19h6M12 15v4"/></svg>
+          <span><strong>Responsive design</strong>Looks great on every device</span>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>
+          <span><strong>Fast &amp; SEO-ready</strong>Built to load quickly and rank</span>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/></svg>
+          <span><strong>Clean, maintainable code</strong>Easy to update and extend later</span>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span><strong>Direct communication</strong>Work one-to-one with the developer</span>
+        </li>
+      </ul>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <span class="eyebrow">technical-skills</span>
-            <h2 class="section-title">Technical Skills</h2>
-            <p class="skills-subtitle">Tools I reach for across the stack — from language fundamentals to production ML.</p>
-            <div class="skills-grid">
-                <div class="skill-category" data-accent="lang">
-                    <div class="skill-category-header">
-                        <span class="skill-category-icon"><i class="fas fa-code"></i></span>
-                        <h3>Languages</h3>
-                        <span class="skill-count">08</span>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">C++</span>
-                    </div>
-                </div>
+    <!-- ============ Services ============ -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="services-title">What I can build for you</h2>
+          <p class="section__intro">
+            As a freelancer, I help businesses and individuals get online with modern, professional
+            websites &mdash; and build custom web applications when they need more.
+          </p>
+        </header>
 
-                <div class="skill-category" data-accent="db">
-                    <div class="skill-category-header">
-                        <span class="skill-category-icon"><i class="fas fa-database"></i></span>
-                        <h3>Databases</h3>
-                        <span class="skill-count">02</span>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">MySQL</span>
-                    </div>
-                </div>
+        <div class="services">
+          <article class="service">
+            <span class="service__icon-wrap">
+              <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M3 5h18v14H3zM3 9h18M6 7h.01M8.5 7h.01"/></svg>
+            </span>
+            <h3 class="service__title">Business &amp; Portfolio Websites</h3>
+            <p class="service__desc">
+              Professional websites for businesses, startups, and individuals &mdash; responsive on
+              every device, fast to load, and easy to find on search engines.
+            </p>
+            <ul class="service__list">
+              <li>Responsive, mobile-first design</li>
+              <li>Landing pages &amp; company websites</li>
+              <li>Personal portfolios</li>
+              <li>SEO-friendly, performance-focused</li>
+            </ul>
+          </article>
 
-                <div class="skill-category" data-accent="fw">
-                    <div class="skill-category-header">
-                        <span class="skill-category-icon"><i class="fas fa-cube"></i></span>
-                        <h3>Frameworks &amp; Libraries</h3>
-                        <span class="skill-count">06</span>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Express.js</span>
-                        <span class="skill-tag">Tailwind CSS</span>
-                        <span class="skill-tag">Bootstrap</span>
-                        <span class="skill-tag">RESTful APIs</span>
-                    </div>
-                </div>
+          <article class="service">
+            <span class="service__icon-wrap">
+              <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 5l-3 14"/></svg>
+            </span>
+            <h3 class="service__title">Full-Stack Web Applications</h3>
+            <p class="service__desc">
+              Custom web applications built end to end with the MERN stack &mdash; from secure
+              REST APIs and databases to polished, interactive dashboards.
+            </p>
+            <ul class="service__list">
+              <li>Dashboards, ERP &amp; admin panels</li>
+              <li>Secure authentication (JWT)</li>
+              <li>REST API design &amp; integration</li>
+              <li>MongoDB / MySQL databases</li>
+            </ul>
+          </article>
 
-                <div class="skill-category" data-accent="ai">
-                    <div class="skill-category-header">
-                        <span class="skill-category-icon"><i class="fas fa-robot"></i></span>
-                        <h3>AI &amp; ML</h3>
-                        <span class="skill-count">12</span>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Deep Learning</span>
-                        <span class="skill-tag">NLP</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">scikit-learn</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Model Deployment</span>
-                        <span class="skill-tag">LangChain</span>
-                        <span class="skill-tag">RAG</span>
-                        <span class="skill-tag">LLMs</span>
-                    </div>
-                </div>
-
-                <div class="skill-category" data-accent="cloud">
-                    <div class="skill-category-header">
-                        <span class="skill-category-icon"><i class="fas fa-cloud"></i></span>
-                        <h3>Cloud &amp; DevOps</h3>
-                        <span class="skill-count">03</span>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">AWS</span>
-                    </div>
-                </div>
-            </div>
+          <a href="#contact" class="service service--cta">
+            <span class="service__cta-lead">Have a project in mind?</span>
+            <span class="service__cta-title">Let's talk about your website.</span>
+            <span class="service__cta-phone">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+              +91 70952 81725
+            </span>
+            <span class="service__cta-action">Start a project</span>
+          </a>
         </div>
+
+        <!-- Process -->
+        <div class="process">
+          <h3 class="process__title">How I work</h3>
+          <ol class="process__steps">
+            <li>
+              <span class="process__num">01</span>
+              <h4>Discuss</h4>
+              <p>We talk through your goals, audience, and requirements.</p>
+            </li>
+            <li>
+              <span class="process__num">02</span>
+              <h4>Design</h4>
+              <p>I plan the structure and design so you can review it early.</p>
+            </li>
+            <li>
+              <span class="process__num">03</span>
+              <h4>Develop</h4>
+              <p>I build it with clean code and share progress along the way.</p>
+            </li>
+            <li>
+              <span class="process__num">04</span>
+              <h4>Launch</h4>
+              <p>Your site goes live &mdash; tested, fast, and ready for visitors.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <span class="eyebrow">experience.log</span>
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Freelance Software Developer (MERN Stack)</h3>
-                        <p class="timeline-date"><i class="fas fa-calendar"></i> May 2025 – Aug 2025 | Remote</p>
-                        <ul class="timeline-details">
-                            <li>Designed and developed a full-stack ERP (Enterprise Resource Planning) system with comprehensive inventory and user management features</li>
-                            <li>Applied data modeling principles to design an efficient MongoDB schema for scalable data management</li>
-                            <li>Architected and built a scalable, full-stack ERP solution with real-time tracking and automated reporting</li>
-                            <li>Developed secure RESTful APIs and implemented role-based access control (RBAC)</li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- ============ Skills ============ -->
+    <section class="section section--alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="skills-title">Technical skills</h2>
+        </header>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Java Developer Intern</h3>
-                        <p class="timeline-date"><i class="fas fa-calendar"></i> July 2022 – Jan 2023 | SV IT Solutions, Hyderabad</p>
-                        <ul class="timeline-details">
-                            <li>Contributed to the development and maintenance of scalable backend services for a Java-based fraud detection system</li>
-                            <li>Wrote high-quality, maintainable code and actively participated in code reviews</li>
-                            <li>Helped troubleshoot and debug issues, optimizing performance for a system handling high transaction volumes</li>
-                            <li>Collaborated with the team in architecture and design discussions for feature improvements</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="skills">
+          <article class="skill-group">
+            <h3 class="skill-group__title">Languages</h3>
+            <ul class="tags">
+              <li>Java</li><li>Python</li><li>C++</li><li>JavaScript</li><li>SQL</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3 class="skill-group__title">Frontend</h3>
+            <ul class="tags">
+              <li>React</li><li>Redux</li><li>HTML5</li><li>CSS3</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3 class="skill-group__title">Backend &amp; Data</h3>
+            <ul class="tags">
+              <li>Node.js</li><li>Express.js</li><li>REST APIs</li><li>MongoDB</li><li>MySQL</li>
+            </ul>
+          </article>
+          <article class="skill-group skill-group--wide">
+            <h3 class="skill-group__title">AI / Machine Learning</h3>
+            <ul class="tags">
+              <li>TensorFlow</li><li>PyTorch</li><li>Keras</li><li>scikit-learn</li>
+              <li>NumPy</li><li>Pandas</li><li>Hugging Face</li><li>LLM APIs (OpenAI / Claude / Gemini)</li>
+              <li>RAG pipelines</li><li>Generative AI</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3 class="skill-group__title">Cloud &amp; Tools</h3>
+            <ul class="tags">
+              <li>AWS</li><li>Vercel</li><li>Git</li><li>GitHub</li><li>FFmpeg</li>
+            </ul>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <span class="eyebrow">projects</span>
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card" data-accent="lang">
-                    <div class="project-image">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Gate-AI-Prep</h3>
-                        <p class="tech-stack">
-                            <span class="tech">React</span>
-                            <span class="tech">Node.js</span>
-                            <span class="tech">MongoDB</span>
-                            <span class="tech">Google Gemini API</span>
-                        </p>
-                        <p class="project-description">
-                            A full-stack, interactive web application designed to help students prepare for the GATE exam. The platform leverages the Google Gemini API to deliver personalized learning experiences with unlimited, dynamically generated MCQs, instant detailed explanations, and persistent user session history.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://team-anitians.vercel.app/dashboard" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="https://github.com/satyalaxminarasimha" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
+    <!-- ============ Projects ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="projects-title">Selected projects</h2>
+        </header>
 
-                <div class="project-card" data-accent="db">
-                    <div class="project-image">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Adaptive Learn AI</h3>
-                        <p class="tech-stack">
-                            <span class="tech">Next.js</span>
-                            <span class="tech">GenAI</span>
-                            <span class="tech">MongoDB</span>
-                            <span class="tech">Firebase</span>
-                        </p>
-                        <p class="project-description">
-                            A full-stack AI tutoring platform that helps students learn faster through personalized quizzes, AI chat guidance, progress analytics, and weak-area tracking. It also equips professors and admins with role-based dashboards to manage classes, monitor performance, and support learners at scale.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://adaptive-learn-ai.vercel.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-accent="fw">
-                    <div class="project-image">
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Interactive Caesar Cipher Web Tool</h3>
-                        <p class="tech-stack">
-                            <span class="tech">JavaScript</span>
-                            <span class="tech">HTML5</span>
-                            <span class="tech">Tailwind CSS</span>
-                        </p>
-                        <p class="project-description">
-                            A responsive, single-page web application for real-time text encryption and decryption using the Caesar cipher algorithm. Features a modern, intuitive user interface built with Tailwind CSS and powered by vanilla JavaScript for all client-side logic.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://github.com/satyalaxminarasimha" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> View</a>
-                            <a href="https://github.com/satyalaxminarasimha" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-accent="ai">
-                    <div class="project-image">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>GenAI Summarization with LangChain</h3>
-                        <p class="tech-stack">
-                            <span class="tech">Python</span>
-                            <span class="tech">LangChain</span>
-                            <span class="tech">LLM</span>
-                        </p>
-                        <p class="project-description">
-                            A document summarization pipeline that ingests text files and produces concise summaries using LangChain prompt chains and LLM-backed reasoning.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://github.com/satyalaxminarasimha/GenAI-Summarization-with-Langchain-Summarize-Text-Documents" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-accent="cloud">
-                    <div class="project-image">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Health For All</h3>
-                        <p class="tech-stack">
-                            <span class="tech">Next.js</span>
-                            <span class="tech">Node.js</span>
-                            <span class="tech">MongoDB</span>
-                            <span class="tech">Tailwind CSS</span>
-                        </p>
-                        <p class="project-description">
-                            A health services platform delivering accessible medical resources and appointment workflows with a responsive Next.js frontend and secure backend APIs.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://health-for-all-br4l.vercel.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="https://github.com/satyalaxminarasimha/Health-For-All" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-accent="lang">
-                    <div class="project-image">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>AssetWatch</h3>
-                        <p class="tech-stack">
-                            <span class="tech">Next.js</span>
-                            <span class="tech">Node.js</span>
-                            <span class="tech">MongoDB</span>
-                            <span class="tech">Tailwind CSS</span>
-                        </p>
-                        <p class="project-description">
-                            A portfolio tracker for monitoring assets with responsive dashboards, secure APIs, and a fast Next.js frontend deployed on Vercel.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://asset-watch.vercel.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="https://github.com/satyalaxminarasimha/AssetWatch" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-accent="db">
-                    <div class="project-image">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Full-Stack ERP System</h3>
-                        <p class="tech-stack">
-                            <span class="tech">MERN</span>
-                            <span class="tech">MongoDB</span>
-                            <span class="tech">REST APIs</span>
-                            <span class="tech">RBAC</span>
-                        </p>
-                        <p class="project-description">
-                            A comprehensive Enterprise Resource Planning system with features for inventory management, user management, real-time tracking, and automated reporting. Implements secure RESTful APIs with role-based access control for different user types.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://github.com/satyalaxminarasimha" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> View</a>
-                            <a href="https://github.com/satyalaxminarasimha" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="projects">
+          <article class="project">
+            <div class="project__top">
+              <span class="service__icon-wrap">
+                <svg class="project__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M4 19.5V5a2 2 0 0 1 2-2h13v15H6a2 2 0 0 0-2 2zm0 0A2 2 0 0 0 6 21h13M12 7v6M9 10h6"/></svg>
+              </span>
+              <span class="project__badge">Published research</span>
             </div>
+            <h3 class="project__title">Adaptive LLM Student Learning Assistant</h3>
+            <p class="project__desc">
+              A multi-role learning platform that delivers personalized quizzes and targeted concept
+              remediation, powered by a dynamic Retrieval-Augmented Generation (RAG) pipeline.
+              Published in a peer-reviewed journal.
+            </p>
+            <ul class="project__stack"><li>React.js</li><li>Node.js</li><li>MongoDB</li><li>LLM APIs</li><li>RAG</li></ul>
+            <div class="project__actions">
+              <a href="https://adaptive-learn-ai.vercel.app/" target="_blank" rel="noopener noreferrer" class="project__action project__action--primary">Live demo</a>
+              <a href="https://github.com/satyalaxminarasimha/AdaptiveLearnAI" target="_blank" rel="noopener noreferrer" class="project__action">Source code</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__top">
+              <span class="service__icon-wrap">
+                <svg class="project__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M9 4h6v3H9zM9 5H6v16h12V5h-3M9 13l2 2 4-4"/></svg>
+              </span>
+            </div>
+            <h3 class="project__title">Gate-AI-Prep: Dynamic Examination Platform</h3>
+            <p class="project__desc">
+              An EdTech test engine that uses generative AI to create syllabus-aligned GATE
+              multiple-choice questions, with token authentication, saved test progress, and
+              indexed database queries.
+            </p>
+            <ul class="project__stack"><li>React.js</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>Gemini API</li></ul>
+            <div class="project__actions">
+              <a href="https://team-anitians.vercel.app/login" target="_blank" rel="noopener noreferrer" class="project__action project__action--primary">Live demo</a>
+              <a href="https://github.com/satyalaxminarasimha/Team-Anitians" target="_blank" rel="noopener noreferrer" class="project__action">Source code</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__top">
+              <span class="service__icon-wrap">
+                <svg class="project__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M7 3h10a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM10.5 9.5v5l4-2.5z"/></svg>
+              </span>
+            </div>
+            <h3 class="project__title">AI Story-to-Video Generation Pipeline</h3>
+            <p class="project__desc">
+              An asynchronous pipeline that turns stories into narrated 9:16 vertical videos, with
+              AI-generated scenes, voice narration, captions, camera animation, and music.
+            </p>
+            <ul class="project__stack"><li>Python</li><li>Gemini API</li><li>Wan 2.1</li><li>FFmpeg</li><li>Async workers</li></ul>
+            <div class="project__actions">
+              <a href="https://github.com/satyalaxminarasimha/AI_Video_Generator" target="_blank" rel="noopener noreferrer" class="project__action project__action--primary">Source code</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__top">
+              <span class="service__icon-wrap">
+                <svg class="project__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v4H4zM4 11h7v8H4zM13 11h7v8h-7z"/></svg>
+              </span>
+            </div>
+            <h3 class="project__title">Full-Stack ERP System</h3>
+            <p class="project__desc">
+              A scalable Enterprise Resource Planning application with real-time inventory tracking,
+              automated reporting, and secure JWT authentication.
+            </p>
+            <ul class="project__stack"><li>React</li><li>Node.js</li><li>MongoDB</li><li>JWT</li></ul>
+            <div class="project__actions">
+              <a href="https://github.com/satyalaxminarasimha" target="_blank" rel="noopener noreferrer" class="project__action">View on GitHub</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__top">
+              <span class="service__icon-wrap">
+                <svg class="project__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z M9 12l2 2 4-4"/></svg>
+              </span>
+            </div>
+            <h3 class="project__title">Credit Card Fraud Detection System</h3>
+            <p class="project__desc">
+              A robust backend engine that analyzes transaction patterns in real time. Showcases
+              algorithms, data analysis, and building high-performance systems.
+            </p>
+            <ul class="project__stack"><li>Java</li><li>SQL</li><li>Backend</li></ul>
+            <div class="project__actions">
+              <a href="https://github.com/satyalaxminarasimha" target="_blank" rel="noopener noreferrer" class="project__action">View on GitHub</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__top">
+              <span class="service__icon-wrap">
+                <svg class="project__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h2v2h-2zM18 18h2v2h-2zM14 18h2M18 14h2"/></svg>
+              </span>
+            </div>
+            <h3 class="project__title">QR Code Generator</h3>
+            <p class="project__desc">
+              A user-friendly desktop application with a graphical interface built in Tkinter &mdash;
+              a practical tool that turns a common need into a fast, focused solution.
+            </p>
+            <ul class="project__stack"><li>Python</li><li>Tkinter</li><li>GUI</li></ul>
+            <div class="project__actions">
+              <a href="https://github.com/satyalaxminarasimha/qrcode-generator" target="_blank" rel="noopener noreferrer" class="project__action project__action--primary">Source code</a>
+            </div>
+          </article>
         </div>
+
+        <p class="projects__more">
+          <a href="https://github.com/satyalaxminarasimha?tab=repositories" target="_blank" rel="noopener noreferrer" class="link-arrow">
+            See all repositories on GitHub
+          </a>
+        </p>
+      </div>
     </section>
 
-    <!-- Education & Certifications Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <span class="eyebrow">education</span>
-            <h2 class="section-title">Education & Certifications</h2>
-            <div class="edu-certs-grid">
-                <div class="education-block">
-                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-                    
-                    <div class="edu-item">
-                        <div class="edu-header">
-                            <h4>B.Tech in Computer Science and Engineering (AI &amp; ML)</h4>
-                            <span class="edu-year">May 2026</span>
-                        </div>
-                        <p class="edu-institution">Anil Neerukonda Institute of Technology and Sciences (ANITS), Visakhapatnam</p>
-                    </div>
+    <!-- ============ Experience ============ -->
+    <section class="section section--alt" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="experience-title">Experience</h2>
+        </header>
 
-                    <div class="edu-item">
-                        <div class="edu-header">
-                            <h4>Diploma in Computer Science Engineering</h4>
-                            <span class="edu-year">June 2023</span>
-                        </div>
-                        <p class="edu-institution">Andhra Polytechnic, Kakinada</p>
-                    </div>
-                </div>
-
-                <div class="certification-block">
-                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
-                    
-                    <div class="cert-gallery">
-                        <div class="cert-item-gallery" data-accent="lang">
-                            <a href="https://drive.google.com/file/d/1hC7car8F9C0RRsLL4cItAsveKIlNdWGe/view?usp=sharing" target="_blank" class="cert-link">
-                                <div class="cert-image">
-                                    <i class="fas fa-certificate"></i>
-                                    <p>Python Django</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="cert-item-gallery" data-accent="cloud">
-                            <a href="https://drive.google.com/file/d/1-EouDfC5l7iBXAjWRF0Ng551TtcZdzL7/view?usp=sharing" target="_blank" class="cert-link">
-                                <div class="cert-image">
-                                    <i class="fas fa-certificate"></i>
-                                    <p>AWS-Cloud Computing</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="cert-item-gallery" data-accent="cloud">
-                            <a href="https://drive.google.com/file/d/1eBtFXpU9NAcM_F3sH2NgUh-syT8PYmfb/view?usp=sharing" target="_blank" class="cert-link">
-                                <div class="cert-image">
-                                    <i class="fas fa-certificate"></i>
-                                    <p>NPTEL Cloud Computing Certification</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="cert-item-gallery" data-accent="db">
-                            <a href="https://drive.google.com/file/d/1sGtdEC5rzzHr73qX-Xw116ZyjZZIMVZz/view?usp=sharing" target="_blank" class="cert-link">
-                                <div class="cert-image">
-                                    <i class="fas fa-certificate"></i>
-                                    <p>IT Essentials: PC Hardware and Software</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="cert-item-gallery" data-accent="ai">
-                            <a href="https://drive.google.com/file/d/1fS81mRNqr7Gf-oy-t8rkEZKEPGNDEZFe/view?usp=sharing" target="_blank" class="cert-link">
-                                <div class="cert-image">
-                                    <i class="fas fa-certificate"></i>
-                                    <p>Introduction to Internet of Things</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <div class="timeline__date">May 2025 — Present</div>
+            <div class="timeline__body">
+              <h3 class="timeline__role">Freelance Web &amp; Software Developer</h3>
+              <p class="timeline__org">Self-employed</p>
+              <ul class="timeline__points">
+                <li>Design and develop responsive business and portfolio websites for clients, from first concept to deployment.</li>
+                <li>Developed and maintained a full-stack, web-based ERP system end to end.</li>
+                <li>Designed secure RESTful APIs and robust frontend state management with Redux.</li>
+              </ul>
+              <ul class="tags tags--sm"><li>React</li><li>Redux</li><li>Node.js</li><li>Express</li><li>MongoDB</li></ul>
             </div>
-        </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__date">Jul 2022 — Jan 2023</div>
+            <div class="timeline__body">
+              <h3 class="timeline__role">Java Developer Intern</h3>
+              <p class="timeline__org">SV IT Solutions</p>
+              <ul class="timeline__points">
+                <li>Built and tested core components for a high-transaction fraud detection system using Java and JSP.</li>
+                <li>Optimized performance and reduced alert review times.</li>
+              </ul>
+              <ul class="tags tags--sm"><li>Java</li><li>JSP</li><li>SQL</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
     </section>
 
-    <!-- Publications Section -->
-    <section id="publications" class="publications">
-        <div class="container">
-            <span class="eyebrow">publications</span>
-            <h2 class="section-title">Publications</h2>
-            <div class="publication-item">
-                <h3>Student Learning Assistant Based on Adaptive LLM</h3>
-                <p class="pub-authors">M. Sundrababu, Nelakurthi Varalakshmi, Kapuganti Sri Rachana, Namballa Sai Jayanth, Karri Satya Laxmi Narasimha Murthy</p>
-                <p class="pub-venue">International Journal of Engineering Research &amp; Technology (IJERT), Vol. 15, Issue 07, July 2026</p>
-                <p class="pub-doi">DOI: <a href="https://doi.org/10.5281/zenodo.21768231" target="_blank">10.5281/zenodo.21768231</a> | <a href="#" target="_blank">View Publication</a></p>
-                <ul class="pub-details">
-                    <li>Co-authored a peer-reviewed paper proposing an Adaptive LLM-based student learning assistant combining Retrieval-Augmented Generation (RAG), automated quiz generation, and personalized performance analytics.</li>
-                    <li>Contributed to system architecture design and evaluation of the platform, covering semantic knowledge-base construction, weak-topic detection, and AI tutor interaction.</li>
-                </ul>
-            </div>
+    <!-- ============ Contact ============ -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div>
+          <h2 class="contact__title" id="contact-title">Tell me about your project.</h2>
+          <p class="contact__text">
+            Need a website or web application, or looking to hire? I'm available for freelance
+            projects and full-time opportunities. Call, email, or connect on LinkedIn &mdash;
+            I'd be glad to hear about your project.
+          </p>
+          <div class="contact__actions">
+            <a href="tel:+917095281725" class="btn btn--gold btn--lg">Call now</a>
+            <a href="mailto:k.sathyam2003@gmail.com" class="btn btn--light-outline btn--lg">Send an email</a>
+          </div>
         </div>
+
+        <ul class="contact__cards">
+          <li>
+            <a href="tel:+917095281725" class="contact-card">
+              <span class="contact-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+              <span><small>Phone</small>+91 70952 81725</span>
+            </a>
+          </li>
+          <li>
+            <div class="contact-card">
+              <span class="contact-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg></span>
+              <span><small>Email</small><a href="mailto:k.sathyam2003@gmail.com">k.sathyam2003@gmail.com</a></span>
+              <button type="button" class="copy-btn" id="copy-email" data-email="k.sathyam2003@gmail.com">
+                <span class="copy-label" aria-live="polite">Copy</span>
+              </button>
+            </div>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/satya2812/" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <span class="contact-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></span>
+              <span><small>LinkedIn</small>linkedin.com/in/satya2812</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/satyalaxminarasimha" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <span class="contact-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"/></svg></span>
+              <span><small>GitHub</small>github.com/satyalaxminarasimha</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <span class="eyebrow">contact</span>
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-content">
-                <p class="contact-description">
-                    I'm always open to new opportunities and collaborations. Feel free to reach out!
-                </p>
-                
-                <div class="contact-methods">
-                    <a href="mailto:k.sathyam2003@gmail.com" class="contact-method" data-accent="lang">
-                        <div class="method-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="method-info">
-                            <h4>Email</h4>
-                            <p>k.sathyam2003@gmail.com</p>
-                        </div>
-                    </a>
+  </main>
 
-                    <a href="tel:+917095281725" class="contact-method" data-accent="fw">
-                        <div class="method-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="method-info">
-                            <h4>Phone</h4>
-                            <p>+91 7095281725</p>
-                        </div>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/satya2812/" target="_blank" class="contact-method" data-accent="db">
-                        <div class="method-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <div class="method-info">
-                            <h4>LinkedIn</h4>
-                            <p>Connect with me</p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/satyalaxminarasimha" target="_blank" class="contact-method" data-accent="cloud">
-                        <div class="method-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="method-info">
-                            <h4>GitHub</h4>
-                            <p>View my repositories</p>
-                        </div>
-                    </a>
-
-                    <!-- Removed LeetCode contact method -->
-
-                    <a href="https://drive.google.com/file/d/1hENM09mwcduFMswTfNc7uA6m6cgmrffi/view?usp=sharing" target="_blank" class="contact-method" data-accent="ai">
-                        <div class="method-icon">
-                            <i class="fas fa-file-pdf"></i>
-                        </div>
-                        <div class="method-info">
-                            <h4>Resume</h4>
-                            <p>Download my resume</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/satya2812/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/satyalaxminarasimha" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    <!-- Removed LeetCode social link -->
-                    <a href="https://drive.google.com/file/d/1hENM09mwcduFMswTfNc7uA6m6cgmrffi/view?usp=sharing" target="_blank" title="Resume"><i class="fas fa-file-pdf"></i></a>
-                    <a href="mailto:k.sathyam2003@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-status">Open to full-time Software Engineer roles</p>
-            <p>&copy; 2026 Satya Laxmi. All rights reserved.</p>
-            <p>Designed with <i class="fas fa-heart"></i> for innovation and excellence</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#top" class="nav__logo" aria-label="Back to top">
+          <span class="nav__logo-mark">KS</span>
+          <span class="nav__logo-text">
+            <span class="nav__logo-name">Satya</span>
+            <span class="nav__logo-tag">Software engineer</span>
+          </span>
+        </a>
+        <p>Professional websites and full-stack web applications for businesses and individuals.</p>
+      </div>
+      <nav class="footer__col" aria-label="Footer">
+        <h3>Navigate</h3>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+        </ul>
+      </nav>
+      <div class="footer__col">
+        <h3>Get in touch</h3>
+        <ul>
+          <li><a href="tel:+917095281725">+91 70952 81725</a></li>
+          <li><a href="mailto:k.sathyam2003@gmail.com">k.sathyam2003@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/satya2812/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/satyalaxminarasimha" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year">2026</span> Karri Satya Laxmi Narasimha Murthy. All rights reserved.</p>
+      <a href="#top" class="footer__top">Back to top</a>
+    </div>
+  </footer>
 </body>
 </html>
+
